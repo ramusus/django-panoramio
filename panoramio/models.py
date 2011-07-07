@@ -51,7 +51,7 @@ class Photo(models.Model):
 
     uploaded = models.DateField()
     owner_id = models.PositiveIntegerField()
-    owner_name = models.CharField(max_length=50)
+    owner_name = models.CharField(max_length=100)
     owner_url = models.CharField(max_length=100)
 
     object_id = models.PositiveIntegerField(null=True)
